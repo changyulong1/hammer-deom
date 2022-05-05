@@ -441,7 +441,7 @@
 
 .nav-cart-list .item-desc .attrs span {
   position: relative;
-  */ display: inline-block;
+  display: inline-block;
   margin-right: 20px;
   font-size: 14px;
   line-height: 14px;

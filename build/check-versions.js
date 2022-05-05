@@ -22,9 +22,11 @@ if (shell.which('npm')) {
     currentVersion: exec('npm --version'),
     versionRequirement: packageConfig.engines.npm
   })
+  console.log(1)
 }
 
 module.exports = function () {
+  console.log(2)
   const warnings = []
   for (let i = 0; i < versionRequirements.length; i++) {
     const mod = versionRequirements[i]
@@ -37,16 +39,15 @@ module.exports = function () {
   }
 
   if (warnings.length) {
-    console.log('')
-    console.log(chalk.yellow('To use this template, you must update following to modules:'))
-    console.log()
+    // console.log(3)
+    // console.log('')
+    // console.log(chalk.yellow('To use this template, you must update following to modules:'))
+    // console.log()
 
     for (let i = 0; i < warnings.length; i++) {
       const warning = warnings[i]
-      console.log('  ' + warning)
+      // console.log('  ' + warning)
     }
-
-    console.log()
     process.exit(1)
   }
 }
