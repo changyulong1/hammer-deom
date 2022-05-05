@@ -25,33 +25,33 @@ Vue.use(Router)
 
 export default new Router({
   routes: [
-    {path: '/', component: shouye},
-    {path: '/parts', component: parts},
-    {path: '/shouji', component: shouji},
-    {path: '/zuji', component: zuji},
-    {path: '/zhoubian', component: zhoubian},
-    {path: '/peijian', component: peijian},
-    {path: '/fuwu', component: fuwu},
-    {path: '/quan', component: quan},
-    {path: '/xiang',name:'xiang', component: xiang},
-    {path: '/qingdan',name: 'qingdan', component: qingdan},
-    {path: '/jiesuan', component: jiesuan},
-    {path:'/tijiao', name: 'tijiao', component: tijiao},
+    { path: '/', component: shouye },
+    { path: '/parts', component: parts },
+    { path: '/shouji', component: shouji },
+    { path: '/zuji', component: zuji },
+    { path: '/zhoubian', component: zhoubian },
+    { path: '/peijian', component: peijian },
+    { path: '/fuwu', component: fuwu },
+    { path: '/quan', component: quan },
+    { path: '/xiang', name: 'xiang', component: xiang },
+    { path: '/qingdan', name: 'qingdan', component: qingdan },
+    { path: '/jiesuan', component: jiesuan },
+    { path: '/tijiao', name: 'tijiao', component: tijiao },
     {
-        path: '/ding', 
-        component: dingdan,
-        children:[
-            {
-                path: '',
-                name: 'luyou1',
-                component: luyou1
-            },
-            {
-                path: '/luyou2',
-                name: 'luyou2',
-                component: luyou2
-            }
-        ]
+      path: '/ding',
+      component: dingdan,
+      children: [
+        {
+          path: '',
+          name: 'luyou1',
+          component: luyou1
+        },
+        {
+          path: '/luyou2',
+          name: 'luyou2',
+          component: luyou2
+        }
+      ]
 
     }
   ]

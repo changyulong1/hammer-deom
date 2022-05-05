@@ -7,16 +7,16 @@
 </template>
 
 <script>
-import headername from '@/components/header'
-import footername from '@/components/footername'
+import headername from "@/components/header";
+import footername from "@/components/footername";
 export default {
-  name: 'App',
+  name: "App",
   components: {
     headername,
-    footername
-  }
+    footername,
+  },
 };
 </script>
 
 <style>
-style>
+</style>
